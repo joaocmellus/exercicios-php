@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Tabajara</title>
+</head>
+<body>
+    <h1>Mercado Tabajara</h1>
+    <Table border="1"> 
+        <caption>Promoção Mercado Tabajara</caption>
+        <tr>
+            <th>Carne</th>
+            <th>até 5kg</th>
+            <th>acima de 5kg</th>
+        </tr>
+        <tr>
+            <td>File Duplo</td>
+            <td>R$ 4,90 por Kg</td>
+            <td>R$ 5,80 por Kg</td>
+        </tr>
+        <tr>
+            <td>Alcatra</td>
+            <td>R$ 5,90 por Kg</td>
+            <td>R$ 6,80 por Kg</td>
+        </tr>
+        <tr>
+            <td>Picanha</td>
+            <td>R$ 6,90 por Kg</td>
+            <td>R$ 7,80 por Kg</td>
+        </tr>     
+    </Table>
+    <h2>Área de compras</h2>
+    <h3>Tipo de carne</h3>
+    <form action="nota_fiscal.php" method="GET">
+        <input type="radio" id="file_duplo" name="carne" value="file_duplo" checked>
+        <label for="">Filé Duplo</label>
+        <br>
+        <input type="radio" id="alcatra" name="carne" value="alcatra" checked>
+        <label for="alcatra">Alcatra</label>
+        <br>
+        <input type="radio" id="picanha" name="carne" value="picanha" checked>
+        <label for="picanha">Picanha</label>
+        <br>
+        <label for="quantidade">Quantidade:</label>
+        <br>
+        <input type="number" name="quantidade">
+        
+        <h3>Forma de pagamento</h3>
+        <input type="radio" id="dinheiro" name="forma_pag" value="dinheiro" checked>   
+        <label for="dinheiro">Dinheiro</label>
+        <br>
+        <input type="radio" id="cartao" name="forma_pag" value="cartao">   
+        <label for="cartao">Cartão</label>
+        <br>
+        <input type="radio" id="cartao_tabajara" name="forma_pag" value="cartao_tabajara">   
+        <label for="cartao_tabajara">Cartão Tabajara</label>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
